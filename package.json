@@ -15,6 +15,6 @@
     "yargs": "^17.7.2"
   },
   "bin": {
-    "eda-bom-to-inventree-assembly": "./eda-bom-to-inventree-assembly.mjs"
+    "eda-bom-to-inventree-assembly": "eda-bom-to-inventree-assembly.mjs"
   }
 }
