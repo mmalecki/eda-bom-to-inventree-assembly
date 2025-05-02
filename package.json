@@ -13,5 +13,8 @@
     "csv-stringify": "^6.5.2",
     "stream-transform": "^3.3.3",
     "yargs": "^17.7.2"
+  },
+  "bin": {
+    "eda-bom-to-inventree-assembly": "./eda-bom-to-inventree-assembly.mjs"
   }
 }
