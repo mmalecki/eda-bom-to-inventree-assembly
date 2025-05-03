@@ -25,3 +25,7 @@ npx eda-bom-to-inventree-assembly < kicad-bom.csv > inventree-bom.csv
 ```
 
 The BOM can then be imported using [InvenTree's BOM import functionality](https://docs.inventree.org/en/stable/build/bom_import/).
+
+## Alternatives
+
+If you prefer a GUI-based approach, check out [kinventree-bom](https://github.com/clj/kinventree-bom).
