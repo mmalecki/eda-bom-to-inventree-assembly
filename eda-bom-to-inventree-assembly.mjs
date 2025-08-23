@@ -60,7 +60,11 @@ in_
   .pipe(parse({ columns: true }))
   .pipe(transform((row) => {
     const ref = row['Reference'];
-    const quantity = row['Qty'] || row['Quantity'] || '1';
+    const quantity = row['Qty'] || row['Quantity'] || ((row) => {
+      const qty = ref.split(',').length;
+      console.warn(`No explicit quantity given for ${ref}, inferring from reference designator count: ${qty}`);
+      return qty;
+    })(row);
 
     // Find the first available MPN field
     const partMpn = MPN_FIELDS.reduce((acc, field) => {
